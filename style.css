@@ -1,0 +1,170 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{ 
+    height: 100vh;
+    background-image: url(/images/pexels-thành-trần-3788363.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    backdrop-filter: blur(5px);
+    
+}
+
+.images img{
+    max-width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 9vh;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li{
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-out;
+    
+}
+.menu ul li a:hover{
+    content: none;
+    color: white;
+    transition: 0.2s ease-out;
+
+}
+
+.content h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    
+}
+.part-1{
+    height: 100vh;
+}
+
+.btn{
+   
+    line-height: 7vh;
+    padding: 0 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+
+.btn:hover{
+    content: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 5px 5px rgb(0, 0, 0);
+
+
+}
+.part-2{
+    height: 100vh;
+}
+.container{
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards img{
+    max-width: 88%;
+}
+.cards{
+    cursor: pointer;
+  
+    height: 60vh;
+    margin-left: 10vh;
+}
+.contents{
+    max-width: 64%;
+}
+
+.about{
+    height: 50vh;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 30vh; */
+}
+
+.heading h1{
+    font-size: 3rem;
+}
+.heading p{
+    font-size: 1rem;
+}
+.about-holder{
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+
+
+
+/* Responsive css code here */
+
+
+@media only screen and (max-width: 749px) {
+    .content{
+        margin-left: 27px;
+        display: block;
+    }
+    body{
+        background-position-x: center;
+    }
+    .container{
+        flex-direction: column;
+        
+    }
+    .cards{
+        height: 80vh;
+    }
+    .about {
+        height: 100vh;
+    }
+    .about-holder {
+        margin-left: 17vh;
+        margin-right: 17vh;
+    }
+    .part-2 {
+        height: 250vh;
+    }
+  }
